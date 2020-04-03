@@ -1,4 +1,6 @@
-'''https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Course%201%20-%20Part%204%20-%20Lesson%202%20-%20Notebook.ipynb#scrollTo=6tki-Aro_Uax'''
+'''
+https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Course%201%20-%20Part%204%20-%20Lesson%202%20-%20Notebook.ipynb#scrollTo=6tki-Aro_Uax
+'''
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
@@ -58,3 +60,5 @@ classifications = model.predict(test_images)
 print(classifications[0])
 
 print(test_labels[0])
+
+
