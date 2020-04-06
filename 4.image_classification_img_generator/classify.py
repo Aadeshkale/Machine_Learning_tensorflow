@@ -81,6 +81,9 @@ train_generator = train_datagen.flow_from_directory('horse-or-human/',
 model.fit(train_generator,steps_per_epoch=8,  epochs=15,verbose=1,callbacks=[myCallback])
 
 
+#  saving  model
+model.save('my_saved_model/mymodel')
+
 # testing the model
 import numpy as np
 from tensorflow.keras.preprocessing import image

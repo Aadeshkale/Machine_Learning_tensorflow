@@ -1,4 +1,4 @@
-Image classfier using tensorflow Image generator class 
+Image classfier using tensorflow Image ImageDataGenerator class 
 -----------------------------------------------------------------
 1.classify.py :- Model Creation, Model Compilation, Model test
 2.dis.img.py  :- Display images with matplotlib 
