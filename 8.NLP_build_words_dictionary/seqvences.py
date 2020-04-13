@@ -10,7 +10,7 @@ sentences = [
 tokenizer = Tokenizer(num_words=100,oov_token="<OOV>") # here oov_token represents the word which is not on dictionary
 tokenizer.fit_on_texts(sentences)
 print("Words dictionary:",tokenizer.index_word)
-# generating sequvences
+# generating sequences
 sequences = tokenizer.texts_to_sequences(sentences)
 print("sentences generated for training data:",sequences)
 
