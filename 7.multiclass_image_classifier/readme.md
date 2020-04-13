@@ -1,16 +1,19 @@
-Image classfier using tensorflow Image ImageDataGenerator class 
------------------------------------------------------------------
-1.classify.py :- Model Creation, Model Compilation, Model test
+Multiple Image classifier using tensorflow Image ImageDataGenerator class 
+----------------------------------------------------------------------------
+1.multi.py :- Model Creation, Model Compilation, Model test
 
-2.dis.img.py  :- Display images with matplotlib 
+2.directory('dataset/rps/' ) :-  Training dataset for model
 
-3.my_saved_model/load_saved_model.py :- to load existing pretrained saved model 
+3.directory('dataset/rps-test-set/') :-  Validation dataset for model
 
-4.directory('horse-or-human' ) :-  Training dataset for model
+----------------------------------------------------------------------------
+**Note:-
 
-5.directory('my_saved_model/mymodel') :-  Saving trained model file
+After generating result the predicted probablities are shown results in the 
+form of alphabetical order of dataset dirctory training labels hirachy
 
------------------------------------------------------------------
+----------------------------------------------------------------------------
 Refrence :-
-https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Course%201%20-%20Part%208%20-%20Lesson%202%20-%20Notebook.ipynb#scrollTo=DoWp43WxJDNT
+
+https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Course%202%20-%20Part%208%20-%20Lesson%202%20-%20Notebook%20(RockPaperScissors).ipynb#scrollTo=it1c0jCiNCIM
 
