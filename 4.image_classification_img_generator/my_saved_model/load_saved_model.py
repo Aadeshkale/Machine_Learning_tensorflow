@@ -5,13 +5,13 @@ model = tf.keras.models.load_model('mymodel')
 import numpy as np
 from tensorflow.keras.preprocessing import image
 
-path = '../horse-test.jpg'
+path = '../human-test.png'
 img = image.load_img(path,target_size=(300,300))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 
-classes = model.predict(x, batch_size=10)
-print(classes[0])
+classes = model.predict_classes(x, batch_size=10)
+print(classes)
 
 if classes[0]>0.5:
     print("{} is a human".format(path))

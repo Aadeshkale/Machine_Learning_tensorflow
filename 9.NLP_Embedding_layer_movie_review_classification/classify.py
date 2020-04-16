@@ -2,6 +2,7 @@
 https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/TensorFlow%20In%20Practice/Course%203%20-%20NLP/Course%203%20-%20Week%202%20-%20Lesson%201.ipynb#scrollTo=1BPH4DTsTM0C
 """
 
+import tensorflow as tf
 import tensorflow_datasets as tfds
 imdb, info = tfds.load("imdb_reviews", with_info=True, as_supervised=True)
 print(imdb)
@@ -67,6 +68,10 @@ model.summary()
 
 num_epochs = 10
 model.fit(padded, training_labels_final, epochs=num_epochs, validation_data=(testing_padded, testing_labels_final))
+
+e = model.layers[0]
+weights = e.get_weights()[0]
+print(weights.shape) # shape: (vocab_size, embedding_dim)
 
 
 import io

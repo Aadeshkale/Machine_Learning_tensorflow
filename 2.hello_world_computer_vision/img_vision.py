@@ -20,7 +20,7 @@ print(training_labels[0])
 print(training_images[0])
 
 
-# convering data into values into 0 to 1 using float division
+# converting data into values into 0 to 1 using float division bez values in float improves ML performance
 
 training_images = training_images/255.0
 test_images = test_images/255.0
